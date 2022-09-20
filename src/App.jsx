@@ -17,13 +17,13 @@ const App = () => (
         </div>
 
         {/* Hero Section */}
-        <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`bg-secondary ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
                 <Hero />
             </div>
         </div>
         {/* After Hero Section */}
-        <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`bg-green ${styles.paddingX} ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
                 <FeedBackCard />
                 < Button />
