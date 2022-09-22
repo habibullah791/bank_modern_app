@@ -14,6 +14,7 @@ const Navbar = () => {
             <ul className="list-none sm:flex hidden justify-end items-center flex-1">
                 {navLinks.map((nav, index) => (
                     <li
+                        key={index}
                         className={`font-popins font-normal cursor-pointer
                         ${index === navLinks.length - 1 ? 'm:0' : 'mr-10'} text-white`}>
                         <a href={`#${nav.id}`}> {nav.title} </a>
