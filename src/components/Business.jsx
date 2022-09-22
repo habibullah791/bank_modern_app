@@ -7,7 +7,7 @@ import Button from './Button'
 
 const FeaturedCard = (features) => {
     return (
-        <div className={`flex flex-row p-6 rounded-[26px] feature-card ${features.id !== features.length ? "mb-6" : "bg-white"}`}>
+        <div key={features.id} className={`flex flex-row p-6 rounded-[26px] feature-card ${features.id !== features.length ? "mb-6" : "bg-white"}`}>
             <div className={`w-[64px] h-[64px] rounded-full bg-dimBlue ${styles.flexCenter}`}>
                 <img src={features.icon} alt="pix" className="w-[50%] h-[50%] object-contain" />
             </div>

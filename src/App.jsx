@@ -2,7 +2,7 @@ import React from "react";
 import styles from './style'
 
 import {
-    Navbar, FeedBackCard, Button, Billing, CardDeal, Business, GetStarted, Clients,
+    Navbar, Billing, CardDeal, Business, Clients,
     CTA, Stats, Footer, Testimonials, Hero,
 } from './components'
 
@@ -29,6 +29,10 @@ const App = () => (
                 <Business />
                 <Billing />
                 <CardDeal />
+                <Testimonials />
+                <Clients />
+                <CTA />
+                <Footer />
             </div>
         </div>
     </div>
