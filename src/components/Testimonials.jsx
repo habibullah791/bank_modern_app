@@ -6,7 +6,7 @@ import FeedBackCard from "./FeedBackCard";
 
 const Testimonials = () => {
     return (
-        <section className={`${styles.flexCenter} ${styles.paddingY} flex-col relative`}>
+        <section id="clients" className={`${styles.flexCenter} ${styles.paddingY} flex-col relative`}>
             <div className="w-full flex-justify-between items-center md:flex-row flex-col sm:mb-q6 mb-6 relative z-[1]">
                 <h1 className={`${styles.heading2}`}>What people are <br className="sm:block hidden" /> saying about us</h1>
                 <div className="w-full md:mt-0 mt-6 text-left">
