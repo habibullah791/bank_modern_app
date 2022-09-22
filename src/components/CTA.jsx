@@ -14,7 +14,7 @@ const CTA = () => {
                     Everything you need to accept card payments and grow your business anywhere on the planet.
                 </p>
             </div>
-            <div className="">
+            <div className="mb-10">
                 <Button styles="mt-10 rounded-[7px]" />
             </div>
         </section>

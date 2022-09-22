@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className="flex-[1.5] flex flex-row w-full  justify-between flex-wrap">
                     {footerLinks.map((footerLink) => (
                         <div key={footerLink.key} className="flex flex-col SS:my-0 my-4  min-w-150px]">
-                            <h4 className="font-popins font-medium text-[18px] text-white leading-[27px]">
+                            <h4 className="font-popins font-medium text-[20px] text-white leading-[27px]">
                                 {footerLink.title}
                             </h4>
                             <ul className="mt-4">
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             <div className="flex md:flex-row  flex-col items-center justify-between mb-5 pt-6  border-t-[1px] border-t-[#3F3E45]">
                 <p className="font-popins font-normal text-[18px] text-white leading-[27px] text-center">
-                    2021 HooBank. All Rights Reserved.
+                    Copyright &copy; 2021 HooBank. All Rights Reserved.
                 </p>
                 <div className="flex flex-row items center mt-5">
                     {socialMedia.map((social, index) => (
