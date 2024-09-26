@@ -1,0 +1,34 @@
+name: CI/CD for React App
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20.17.0'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the application
+      run: npm run build
+
+    - name: Deploy to Azure VM
+      env:
+        AZURE_USERNAME: ${{ secrets.AZURE_USERNAME }}  # This will use 'azureuser'
+        AZURE_IP: ${{ secrets.AZURE_IP }}  # This will use '40.127.14.215'
+        AZURE_SSH_KEY: ${{ secrets.AZURE_SSH_KEY }}  # Ensure you have this set up
+      run: |
+        echo "${AZURE_SSH_KEY}" > private_key && chmod 600 private_key
+        ssh -o StrictHostKeyChecking=no -i private_key $AZURE_USERNAME@$AZURE_IP "cd /path/to/your/app && git pull && npm install && npm run build"
