@@ -18,7 +18,7 @@ const Hero = () => {
 
                 <div className="flex flex-row justify-between items-center w-full">
                     <h1 className="flex-1 font-popins font-semibold ss:text-[72px] text-[52px] text-white ss:leading[100px] leading-[70px]">
-                        The Next <br className="sm:block hidden" /> {" "}
+                        The Next WOW<br className="sm:block hidden" /> {" "}
                         <span className="text-gradient">Generation</span> {" "} <br className="sm:block hidden" />
                     </h1>
                     <div className="ss:flex hidden md:mr-4 mr-10">
